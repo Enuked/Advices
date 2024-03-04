@@ -1,0 +1,100 @@
+@import "./global.scss";
+
+main {
+  display: flex;
+  flex-direction: column;
+  background-color: $Dark-Grayish-Blue;
+  border-radius: 9px;
+  align-items: center;
+  max-width: 343px;
+  padding: 23px;
+  gap: 35px;
+  @media (min-width: 767px) {
+    padding: 48px;
+    gap: 37px;
+    max-width: 540px;
+  }
+}
+.wrapper {
+  display: grid;
+  place-content: center;
+  height: calc(95vh);
+}
+.head {
+  display: flex;
+  color: $Neon-Green;
+  gap: 5px;
+  letter-spacing: 4px;
+  > h1 {
+    font-family: $font-family;
+    font-style: $font-style;
+    font-size: 0.63rem;
+    font-weight: 200;
+  }
+  p {
+    font-family: $font-family;
+    font-style: $font-style;
+    font-size: 0.63rem;
+  }
+  @media (min-width: 767px) {
+    > h1 {
+      font-size: 0.88rem;
+    }
+    p {
+      font-size: 0.88rem;
+    }
+  }
+}
+
+.advice {
+  > p {
+    color: $Light-Cyan;
+    font-size: 1.5rem;
+    font-family: $font-family;
+    font-weight: 600;
+    font-style: $font-style;
+    text-align: center;
+    @media (min-width: 767px) {
+      font-size: 1.75rem;
+    }
+  }
+}
+
+span {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
+.span-img {
+  background-image: url("../../public/assets/images/pattern-divider-mobile.svg");
+  width: 100%;
+  height: 17px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  object-fit: cover;
+  @media (min-width: 767px) {
+    background-image: url("../../public/assets/images/pattern-divider-desktop.svg");
+    height: 19px;
+    margin-bottom: 11px;
+  }
+}
+.dice-img {
+  background-color: $Neon-Green;
+  height: 64px;
+  display: flex;
+  width: 64px;
+  border-radius: 100px;
+  margin-top: auto;
+  margin-bottom: -55px;
+  justify-content: center;
+  align-items: center;
+
+  &:hover {
+    box-shadow: 1px 1px 20px 1px $Neon-Green;
+    cursor: pointer;
+
+  }
+  @media (min-width: 767px) {
+    margin-bottom: -79px;
+  }
+}
