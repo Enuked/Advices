@@ -60,11 +60,7 @@ main {
   }
 }
 
-span {
-  display: flex;
-  width: 100%;
-  justify-content: center;
-}
+
 .span-img {
   background-image: url("../../public/assets/images/pattern-divider-mobile.svg");
   width: 100%;
@@ -74,8 +70,10 @@ span {
   object-fit: cover;
   @media (min-width: 767px) {
     background-image: url("../../public/assets/images/pattern-divider-desktop.svg");
-    height: 19px;
     margin-bottom: 11px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 444px 16px;
   }
 }
 .dice-img {
